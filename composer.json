@@ -1,0 +1,16 @@
+{
+    "name": "mozart/annotations",
+    "type": "library",
+    "description": "Mozart Annotations",
+    "keywords": ["annotations"],
+    "license": "BSD-3",
+    "authors": [
+        {
+            "name": "Faizal Pribadi",
+            "email": "faizal_pribadi@aol.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
