@@ -15,7 +15,7 @@ namespace Mozart\Library\Annotations;
  * Filter the definition of method from function
  *
  * @Annotation
- * @Target("METHOD")
+ * @Target("PROPERTY")
  *
  * @author  Faizal Pribadi <faizal_pribadi@aol.com>
  */
@@ -23,13 +23,11 @@ class Definition
 {
     /**
      * @var string
-     * @Required
      */
     public $name;
 
     /**
      * @var string
-     * @Required
      */
     public $definition;
 }
