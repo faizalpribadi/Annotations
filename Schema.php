@@ -15,7 +15,7 @@ namespace Mozart\Library\Annotations;
  * Create definition of method and property on class
  *
  * @Annotation
- * @Target("PROPERTY")
+ * @Target("METHOD")
  *
  * @author  Faizal Pribadi <faizal_pribadi@aol.com>
  */
