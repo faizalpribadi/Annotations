@@ -2,8 +2,8 @@
     "name": "mozart/annotations",
     "type": "library",
     "description": "Mozart Annotations",
-    "keywords": ["annotations"],
-    "license": "BSD-3",
+    "keywords": ["annotations", "reflection"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Faizal Pribadi",
@@ -24,5 +24,4 @@
         }
     }
 }
-
 
