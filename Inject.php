@@ -17,9 +17,25 @@ namespace Mozart\Library\Annotations;
  * @author  Faizal Pribadi  <faizal_pribadi@aol.com>
  *
  * @Annotation
+ *
  * @Target("PROPERTY")
  */
-final class Inject
+class Inject
 {
+    public $class;
 
+    public function __construct($values = null)
+    {
+        if (null !== $values && !is_array($values)) {
+            $values = array(
+                'class' => new \ReflectionClass($this)
+            );
+        }
+
+        $this->class = isset($values['class']) ? $values['class'] : $values['value'];
+
+        if (!class_exists($this->class)) {
+            throw new \Exception(sprintf('Class of ["%s"] not found', $this->class));
+        }
+    }
 }
